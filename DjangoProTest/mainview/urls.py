@@ -5,4 +5,6 @@ urlpatterns = patterns(
     '',
     url(r'^(?:index|index.html)?$', mainview.index),
     url(r'^list/(\d+)/$', mainview.list),
+    url(r'^show/(\d+)/$',mainview.show),
+    url(r'.*',mainview.notfound),
 )

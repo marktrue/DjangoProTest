@@ -1,5 +1,6 @@
 #coding=gb2312
 from django.http import HttpResponse
+from django.http.response import HttpResponseNotFound
 from mainview.models import Article
 from django.template.loader import get_template
 from django.template import Context
@@ -23,5 +24,8 @@ class MainView:
         #return None
 
     #show detail
-    def show(self, request, *args):
-        return None
+    def show(self, request, atc_id):
+        return HttpResponse('')
+
+    def notfound(self, request):
+        return HttpResponseNotFound()

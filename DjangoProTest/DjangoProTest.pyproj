@@ -61,10 +61,20 @@
     <Folder Include="adminxxzx\templates\" />
     <Folder Include="DjangoProTest\" />
     <Folder Include="mainview\" />
+    <Folder Include="mainview\static\" />
+    <Folder Include="mainview\static\css\" />
+    <Folder Include="mainview\static\images\" />
+    <Folder Include="mainview\static\js\" />
     <Folder Include="mainview\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminxxzx\templates\index.html" />
+    <Content Include="mainview\static\css\footer.css" />
+    <Content Include="mainview\static\css\header.css" />
+    <Content Include="mainview\static\css\main.css" />
+    <Content Include="mainview\static\images\top.jpg" />
+    <Content Include="mainview\static\images\top.psd" />
+    <Content Include="mainview\static\test.html" />
     <Content Include="mainview\templates\base.html" />
     <Content Include="mainview\templates\index.html" />
   </ItemGroup>
