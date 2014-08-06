@@ -1,0 +1,21 @@
+@charset "gb2312";
+/* CSS Document */
+
+.cheader {
+	margin: 0;
+	padding: 0;
+}
+
+.cheader .top {
+	width:1000px;
+	height:300px;
+	margin: auto;
+	background:url(/static/images/top.jpg) no-repeat center top;
+}
+
+.cheader .navigator {
+	width: 1000px;
+	height: 30px;
+	background-color:#39F;
+	margin: auto;
+}
