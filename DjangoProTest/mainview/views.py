@@ -1,4 +1,4 @@
-#coding=gb2312
+#coding=utf-8
 from django.http import HttpResponse
 from django.http.response import HttpResponseNotFound
 from mainview.models import Article
@@ -10,8 +10,8 @@ class MainView:
         return None
 
     def index(self, request):
-        t = get_template('index.html')
-        c = Context({'title':'²âÊÔ'})
+        t = get_template('show.html')
+        c = Context({'title':'æµ‹è¯•'})
         html = t.render(c)
         return HttpResponse(html)
 

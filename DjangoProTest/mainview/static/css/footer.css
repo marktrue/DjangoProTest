@@ -2,7 +2,8 @@
 /* CSS Document */
 
 .footer {
-	background-color: #39F;
+	background-color: #3399FF;
+	margin: 100px 0 0 0;
 }
 
 .footer .about
@@ -17,7 +18,7 @@
 
 .footer .about .txt 
 {
-    color: #FFF;
+    color: #FFFFFF;
     font-size: 14px;
     /*vertical-align: middle;*/
 }

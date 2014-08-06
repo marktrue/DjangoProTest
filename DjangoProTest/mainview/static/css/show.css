@@ -1,0 +1,45 @@
+﻿@charset "gb2312";
+/* CSS Document */
+.content 
+{
+    margin: 10px 0;
+}
+
+.content .texts
+{
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 28px;
+}
+
+.conheader .header
+{
+    width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.content .header .title
+{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+}
+
+.content .header .extra
+{
+    width: 900px;
+    height: 30px;
+    margin: auto;
+}
+
+.content .header .extra .author
+{
+    width: auto;
+    font-size: 14px;
+    line-height: 28px;
+    float: left;
+}
