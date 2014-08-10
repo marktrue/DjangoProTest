@@ -10,22 +10,29 @@ class MainView:
         return None
 
     def index(self, request):
-        t = get_template('show.html')
+        t = get_template('index.html')
         c = Context({'title':'测试'})
         html = t.render(c)
         return HttpResponse(html)
 
     #list all
     def list(self, request, col_id):
+        t = get_template('list.html')
         a = Article.collectArticleByColId(col_id)
         #for p in a:
         #    print p.Title
-        return HttpResponse('hello world' + str(col_id) + a[0].Title)
+        c = Context({'title':'测试'})
+        html = t.render(c)
+        return HttpResponse(html)
+        #return HttpResponse('hello world' + str(col_id) + a[0].Title)
         #return None
 
     #show detail
     def show(self, request, atc_id):
-        return HttpResponse('')
+        t = get_template('show.html')
+        c = Context({'title':'测试'})
+        html = t.render(c)
+        return HttpResponse(html)
 
     def notfound(self, request):
-        return HttpResponseNotFound()
+        return HttpResponseNotFound('404 了骚年')

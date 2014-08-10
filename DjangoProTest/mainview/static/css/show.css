@@ -1,4 +1,4 @@
-﻿@charset "gb2312";
+﻿@charset "utf-8";
 /* CSS Document */
 .content 
 {
@@ -14,7 +14,7 @@
     line-height: 28px;
 }
 
-.conheader .header
+.content .header
 {
     width: 1000px;
     overflow: hidden;

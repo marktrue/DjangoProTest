@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.content 
+{
+    margin: 10px 0;
+}
+
+.content .lists
+{
+    width: 1000px;
+    margin: auto;
+    text-overflow: ellipsis;
+    line-height: 28px;
+}
+
+.content .lists .item
+{
+    width: 1000px;
+    height: 30px;
+    font-size: 12px;
+    border-bottom: #777777 dotted 1px;
+}
+
+.content .lists .item .label
+{
+    width: 20px;
+    height: 28px;
+    background: url(/static/images/icon_y.png) no-repeat center;
+    float:left;
+}
+
+.content .lists .item .texts
+{
+    float: left;
+}
+
+.content .lists .item .texts a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.content .lists .item .time
+{
+    float: right;
+}
+
+.content .header
+{
+    width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.content .header .position
+{
+    font-size: 18px;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.content .header .position a
+{
+    text-decoration: none;
+    color: #000000;
+}

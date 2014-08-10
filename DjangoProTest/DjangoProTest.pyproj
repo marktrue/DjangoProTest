@@ -71,12 +71,14 @@
     <Content Include="adminxxzx\templates\index.html" />
     <Content Include="mainview\static\css\footer.css" />
     <Content Include="mainview\static\css\header.css" />
+    <Content Include="mainview\static\css\list.css" />
     <Content Include="mainview\static\css\show.css" />
     <Content Include="mainview\static\images\top.jpg" />
     <Content Include="mainview\static\images\top.psd" />
     <Content Include="mainview\static\test.html" />
     <Content Include="mainview\templates\base.html" />
     <Content Include="mainview\templates\index.html" />
+    <Content Include="mainview\templates\list.html" />
     <Content Include="mainview\templates\show.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
