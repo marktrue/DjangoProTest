@@ -1,0 +1,1 @@
+insert adminxxzx_roles('rName','Power') values('admin','1')

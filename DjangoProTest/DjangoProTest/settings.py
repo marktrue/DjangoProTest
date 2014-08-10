@@ -171,3 +171,10 @@ LOGGING = {
         },
     }
 }
+
+
+
+#from adminxxzx.models import Users
+#AUTH_USER_MODEL = Users
+AUTH_USER_MODEL = 'adminxxzx.Users'
+
