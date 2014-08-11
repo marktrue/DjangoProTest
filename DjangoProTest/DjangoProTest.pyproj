@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminxxzx\sql\roles.sql" />
+    <Content Include="adminxxzx\sql\users.sql" />
     <Content Include="adminxxzx\templates\index.html" />
     <Content Include="mainview\static\css\footer.css" />
     <Content Include="mainview\static\css\header.css" />
