@@ -18,7 +18,14 @@
     </div>
 </div>
 <!-- content begin -->
-
+<div>
+<form name="logonform" method="post" action="/adminxxzx/logon">
+{{% csrf_token %}}
+<input type="text" name="username" />
+<input type="password" name="password" />
+<input type="submit" name=submit" />
+</form>
+</div>
 <!-- content end -->
 <div id="footer" class="footer">
     <div id="about" class="about">

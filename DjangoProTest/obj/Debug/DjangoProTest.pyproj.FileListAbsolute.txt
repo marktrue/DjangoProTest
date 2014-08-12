@@ -1,0 +1,7 @@
+F:\projects\DjangoProTest\DjangoProTest\bin\Microsoft.PythonTools.WebRole.dll
+F:\projects\DjangoProTest\DjangoProTest\bin\AzureSetup.cfg
+F:\projects\DjangoProTest\DjangoProTest\bin\Microsoft.PythonTools.AzureSetup.exe
+F:\projects\DjangoProTest\DjangoProTest\bin\Microsoft.PythonTools.AzureSetup.exe.config
+F:\projects\DjangoProTest\DjangoProTest\bin\wfastcgi.py
+F:\projects\DjangoProTest\DjangoProTest\obj\Debug\web.config
+F:\projects\DjangoProTest\DjangoProTest\obj\Debug\web.debug.config

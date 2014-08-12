@@ -124,10 +124,10 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     #os.path.join(BASE_DIR, 'template/'),
-    'template/'
+    #'template/'
 )
 
-INSTALLED_APPS = (
+DEFAULT_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -139,9 +139,14 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     #
+)
+
+LOCAL_APPS = (
     'mainview',
     'adminxxzx',
 )
+
+INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
