@@ -5,15 +5,16 @@ from django.template.loader import get_template
 from django.template import Context
 from django.utils import simplejson
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
+from django.core.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 from django.contrib import auth
+from django.views.generic import TemplateView
 
 class AdminView:
 
     def __init__(self):
         return None
 
-    @csrf_exempt
     def logon(self, request):
         if request.method == "GET":
             return HttpResponse('')
@@ -22,16 +23,19 @@ class AdminView:
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             auth.login(request, user)
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect('/adminxxzx/')
     
-    @csrf_protect
     def index(self, request):
         if not request.user.is_authenticated():
-            t = get_template('index.html')
+            t = get_template('adminxxzx/index.html')
             c = Context({'title':'用户登录'})
+            c.update(csrf(request))
             html = t.render(c)
             return HttpResponse(html)
         return HttpResponse('')
 
     def notfound(self, request):
         return HttpResponseNotFound('404 别找了')
+
+class AdminxxzxView(TemplateView):
+    template_name = "adminxxzx/index.html"

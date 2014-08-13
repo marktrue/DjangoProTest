@@ -50,6 +50,7 @@
     <Folder Include="adminxxzx\" />
     <Folder Include="adminxxzx\sql\" />
     <Folder Include="adminxxzx\templates\" />
+    <Folder Include="adminxxzx\templates\adminxxzx\" />
     <Folder Include="DjangoProTest\" />
     <Folder Include="mainview\" />
     <Folder Include="mainview\static\" />
@@ -57,11 +58,12 @@
     <Folder Include="mainview\static\images\" />
     <Folder Include="mainview\static\js\" />
     <Folder Include="mainview\templates\" />
+    <Folder Include="mainview\templates\mainview\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminxxzx\sql\roles.sql" />
     <Content Include="adminxxzx\sql\users.sql" />
-    <Content Include="adminxxzx\templates\index.html" />
+    <Content Include="adminxxzx\templates\adminxxzx\index.html" />
     <Content Include="mainview\static\css\footer.css" />
     <Content Include="mainview\static\css\header.css" />
     <Content Include="mainview\static\css\list.css" />
@@ -69,10 +71,12 @@
     <Content Include="mainview\static\images\top.jpg" />
     <Content Include="mainview\static\images\top.psd" />
     <Content Include="mainview\static\test.html" />
-    <Content Include="mainview\templates\base.html" />
-    <Content Include="mainview\templates\index.html" />
-    <Content Include="mainview\templates\list.html" />
-    <Content Include="mainview\templates\show.html" />
+    <Content Include="mainview\templates\mainview\base.html" />
+    <Content Include="mainview\templates\mainview\index.html" />
+    <Content Include="mainview\templates\mainview\list.html" />
+    <Content Include="mainview\templates\mainview\show.html" />
+    <Content Include="web.config" />
+    <Content Include="web.debug.config" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />

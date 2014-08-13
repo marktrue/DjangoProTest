@@ -10,14 +10,14 @@ class MainView:
         return None
 
     def index(self, request):
-        t = get_template('index.html')
+        t = get_template('mainview/index.html')
         c = Context({'title':'测试'})
         html = t.render(c)
         return HttpResponse(html)
 
     #list all
     def list(self, request, col_id):
-        t = get_template('list.html')
+        t = get_template('mainview/list.html')
         a = Article.collectArticleByColId(col_id)
         #for p in a:
         #    print p.Title
@@ -29,7 +29,7 @@ class MainView:
 
     #show detail
     def show(self, request, atc_id):
-        t = get_template('show.html')
+        t = get_template('mainview/show.html')
         c = Context({'title':'测试'})
         html = t.render(c)
         return HttpResponse(html)

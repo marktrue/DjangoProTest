@@ -12,7 +12,7 @@
     </div>
     <div class="navigator">
         <div class="item">
-            <a>Äã&nbsp;&nbsp;ºÃ</a>
+            <a>ä½ &nbsp;&nbsp;å¥½</a>
         </div>
         </div>
     </div>
@@ -20,16 +20,16 @@
 <!-- content begin -->
 <div>
 <form name="logonform" method="post" action="/adminxxzx/logon">
-{{% csrf_token %}}
+{% csrf_token %}
 <input type="text" name="username" />
 <input type="password" name="password" />
-<input type="submit" name=submit" />
+<input type="submit" name="submit" value="OK" />
 </form>
 </div>
 <!-- content end -->
 <div id="footer" class="footer">
     <div id="about" class="about">
-        <span class="txt">ĞÅÏ¢ÖĞĞÄ¼¼ÊõÖ§³Ö<!--{{ about }}--></span>
+        <span class="txt">ä¿¡æ¯ä¸­å¿ƒæŠ€æœ¯æ”¯æŒ<!--{{ about }}--></span>
     </div>
 </div>
 
