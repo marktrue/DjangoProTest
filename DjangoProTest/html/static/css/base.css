@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main
+{
+    width: 1000px;
+    margin: auto;
+}
+
+.content 
+{
+    margin: 0;
+    border: 0;
+    float: left;
+    width: auto;
+    overflow: hidden;
+    width: 1000px;
+}
+

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+.footer {
+	background-color: #3399FF;
+	margin: 100px 0 0 0;
+}
+
+.footer .about
+{
+    width: 1000px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    line-height: 48px;
+    overflow: hidden;
+}
+
+.footer .about .txt 
+{
+    color: #FFFFFF;
+    font-size: 14px;
+    /*vertical-align: middle;*/
+}
