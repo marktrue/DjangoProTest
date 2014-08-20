@@ -54,3 +54,5 @@ docs/_build/
 
 *.suo
 *.db
+DjangoProTest/obj/
+DjangoProTest/bin/
