@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
+body
+{
+    /*background-color: #00b8ff;*/
+    background-color: #f0f0f0;
+}
+
 .welcomtitle
 {
     font-size: 16px;
@@ -10,4 +16,5 @@
 {
     width: 178px;
     height: auto;
+    font-size: 12px;
 }

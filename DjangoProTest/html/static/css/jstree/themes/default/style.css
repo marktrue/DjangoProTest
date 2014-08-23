@@ -1,4 +1,5 @@
 /* jsTree default theme */
+/* modified by marktrue */
 .jstree-node,
 .jstree-children,
 .jstree-container-ul {
@@ -401,30 +402,30 @@
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color1', endColorstr='@color2',GradientType=0 );*/
 }
 .jstree-default .jstree-node {
-  min-height: 24px;
-  line-height: 24px;
-  margin-left: 24px;
-  min-width: 24px;
+  min-height: 20px;
+  line-height: 20px;
+  margin-left: 20px;
+  min-width: 20px;
 }
 .jstree-default .jstree-anchor {
-  line-height: 24px;
-  height: 24px;
+  line-height: 20px;
+  height: 20px;
 }
 .jstree-default .jstree-icon {
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
 }
 .jstree-default .jstree-icon:empty {
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
 }
 .jstree-default.jstree-rtl .jstree-node {
-  margin-right: 24px;
+  margin-right: 20px;
 }
 .jstree-default .jstree-wholerow {
-  height: 24px;
+  height: 20px;
 }
 .jstree-default .jstree-node,
 .jstree-default .jstree-icon {

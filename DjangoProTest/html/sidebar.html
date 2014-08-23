@@ -11,19 +11,30 @@
         <script src="static/js/jquery/jquery-1.11.1.js"></script>
         <script src="static/js/jstree/jstree.js"></script>
         <script>
+            /*
             $(function () {
                 $('#menutree').jstree({'plugins':["wholerow", "dnd"], 'core' : {
                     'check_callback' : true ,
                     'data' : [{
-                        "text" : "Same but with checkboxes",
+                        "text" : "测试",
+                        "icon" : false,
                         "children" : [
-                            { "text" : "initially selected"},
+                            { "text" : "initially selected", "icon" : false},
                             { "text" : "custom icon URL", "icon" : "http://jstree.com/tree-icon.png" },
                             { "text" : "initially open", "children" : [ "Another node" ] },
                             { "text" : "custom icon class", "icon" : "glyphicon glyphicon-leaf" }
                         ]},"And wholerow selection"
                              ]
                 }});
+            });
+            */
+            $(function () {
+                $.ajax({
+                    type : "get",
+                    url : "#",
+                    success : function(data, status){
+                    }
+                });
             });
         </script>
     </body>
