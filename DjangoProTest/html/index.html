@@ -2,12 +2,88 @@
     <head>
         <title>{{ title }}</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="application/javascript">
+        var timer = null,holdon = null;
+        var inith;
+        var mainsets,topframe;
+        var state,mouseon;
+        function autohide()
+        {
+            if (state == 2)
+            {
+                state = 1;
+                inith = 90;
+                mainsets.rows = inith.toString() + ",*";
+                timer = setInterval("setTopHeight(-3)", 10);
+            }
+        }
+        function setTopHeight(delta)
+        {
+            if ((inith <= 9 && state == 1) || (inith >= 90 && state == -1))
+            {
+                if (state == 1)
+                {
+                    state = -2;
+                }
+                else if (state == -1)
+                {
+                    state = 2;
+                    mainsets.rows = "87,*";
+                    if (!mouseon)
+                        delayhide();
+                }
+                clearInterval(timer);
+                timer = null;
+                return;
+            }
+            inith = inith + delta;
+            mainsets.rows = inith.toString() + ",*";
+        }
+        function autoshow()
+        {
+            mouseon = true;
+            if (state == -2)
+            {
+                state = -1;
+                inith = 10;
+                mainsets.rows = inith.toString() + ",*";
+                timer = setInterval("setTopHeight(3)", 10);
+            }
+            else if (state == 2)
+            {
+                if (holdon != null)
+                    clearTimeout(holdon);
+                holdon = null;
+            }
+        }
+        function delayhide()
+        {
+            mouseon = false;
+            if (state == 2)
+            {
+                if (holdon != null)
+                    clearTimeout(holdon);
+                holdon = null;
+                holdon = setTimeout("autohide()",2000);
+            }
+        }
+        window.onload = function ()
+        {
+            mainsets = document.getElementById("mainsets");
+            topframe = document.getElementById("top");
+            state = 2;
+            mouseon = false;
+            top.onmouseout = delayhide;
+            delayhide();
+            topframe.onmouseover = autoshow;
+        }
+    </script>
     </head>
-    <frameset rows="86, *" frameborder="no" border="0" framespacing="0">
-        <frame src="top.html" name="topfrm" scrolling="no" noresize="noresize" id="topfrm" />
+    <frameset id="mainsets" rows="87, *" frameborder="no" border="0" framespacing="0">
+        <frame id="top" src="top.html" name="topfrm" scrolling="no" noresize="noresize" id="topfrm" />
         <frameset cols="210, *" frameborder="no" border="0" framespacing="0">
             <frame src="sidebar.html" name="sidebar" scrolling="no" noresize="noresize" id="sidebar" />
-            <frame src="newArticle.html" name="mainfrm" scrolling="no" noresize="noresize" id="mainfrm" />
+            <frame src="newArticle.html" name="mainfrm" scrolling="yes" noresize="noresize" id="mainfrm" />
         </frameset>
     </frameset>
     <noframes>
