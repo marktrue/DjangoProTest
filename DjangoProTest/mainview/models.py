@@ -11,6 +11,9 @@ class Column(models.Model):
     def __unicode__(self):
         return str(self.Id)
 
+    def getCol(self, user):
+        return None
+
 class Title_Type(models.Model):
     Id = models.AutoField(primary_key=True)
     Color = models.CharField(max_length=16)

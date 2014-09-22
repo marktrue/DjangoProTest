@@ -27,12 +27,31 @@ class AdminView:
     
     def index(self, request):
         if not request.user.is_authenticated():
-            t = get_template('adminxxzx/index.html')
+            t = get_template('adminxxzx/logon.html')
             c = Context({'title':'用户登录'})
             c.update(csrf(request))
             html = t.render(c)
             return HttpResponse(html)
-        return HttpResponse('')
+        t = get_template('adminxxzx/index.html')
+        c = Context({'title':'用户登录'})
+        html = t.render(c)
+        return HttpResponse(html)
+
+    def addArticle(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect('/adminxxzx/')
+        if request.method == "GET":
+            t = get_template("adminxxzx/newArticle.html")
+            c = Context({'title':'用户登录'})
+            html = t.render(c)
+            return HttpResponse(html)
+        elif request.method == "POST":
+            return HttpResponse('')
+
+    def getmenu(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponse('')
+        #
 
     def notfound(self, request):
         return HttpResponseNotFound('404 别找了')
