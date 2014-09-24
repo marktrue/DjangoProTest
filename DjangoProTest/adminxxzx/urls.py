@@ -8,6 +8,6 @@ urlpatterns = patterns(
     url(r'^logon$', adminview.logon),
     url(r'^test$', AdminxxzxView.as_view()),
     url(r'^newArticle.html$',adminview.addArticle),
-    url(r'^getmenu$',),
+    url(r'^getmenu$',adminview.getmenu),
     url(r'', adminview.notfound),
 )

@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager)
+from mainview.models import Column
 
 # Create your models here.
 
@@ -39,7 +40,7 @@ class UserManagers(BaseUserManager):
 class Roles(models.Model):
     Id = models.AutoField(primary_key=True)
     rName = models.CharField(max_length=128)
-    Power = models.CommaSeparatedIntegerField(max_length=256)
+    Power = models.ManyToManyField(Column, related_name='RolesPowers')
 
     def __unicode__(self):
         return str(Id)
@@ -55,8 +56,8 @@ class Users(AbstractBaseUser):
     Name = models.CharField(max_length=128)
     uName = models.CharField(max_length=256, unique=True)
     #uPass = models.CharField(max_length=70)
-    Role = models.ForeignKey(Roles, null=True)
-    exPower = models.CommaSeparatedIntegerField(null=True, max_length=256)
+    Role = models.ManyToManyField(Roles, related_name='UserRoles')
+    exPower = models.ManyToManyField(Column, related_name='UserPowers')
     Telephone = models.CharField(max_length=16, null=True)
     Addr = models.CharField(max_length=256, null=True)
     Postcode = models.CharField(max_length=8, null=True)

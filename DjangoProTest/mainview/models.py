@@ -1,5 +1,4 @@
 from django.db import models
-from adminxxzx.models import Users
 
 # Create your models here.
 class Column(models.Model):
@@ -21,7 +20,8 @@ class Title_Type(models.Model):
 
     def __unicode__(self):
         return str(self.Id)
-
+    
+import adminxxzx.models as admin_models
 
 class Article(models.Model):
     Id = models.AutoField(primary_key=True)
@@ -30,7 +30,7 @@ class Article(models.Model):
     Date = models.DateTimeField(auto_now=True)
     Count = models.PositiveIntegerField()
     Col_id = models.ForeignKey(Column)
-    Author = models.ForeignKey(Users)
+    Author = models.ForeignKey(admin_models.Users)
     Link = models.CharField(max_length=256)
     Jump = models.BooleanField()
     Check = models.BooleanField()
